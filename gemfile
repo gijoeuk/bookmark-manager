@@ -5,7 +5,8 @@ source 'https://www.rubygems.org'
   gem 'data_mapper'
   gem 'dm-postgres-adapter'
   gem 'dm-migrations'
-  gem 'sinatra/base'
+  gem 'sinatra'
+  gem 'selenium-webdriver'
 
 group :test do
   gem 'capybara'

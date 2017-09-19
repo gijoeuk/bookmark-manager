@@ -15,6 +15,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.7.1)
+      ffi (~> 1.0, >= 1.0.11)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
@@ -77,6 +79,7 @@ GEM
     mini_mime (0.1.4)
     mini_portile2 (2.2.0)
     multi_json (1.12.2)
+    mustermann (1.0.1)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     parallel (1.12.0)
@@ -85,6 +88,8 @@ GEM
     powerpack (0.1.1)
     public_suffix (3.0.0)
     rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rainbow (2.2.2)
@@ -117,6 +122,10 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.3)
     ruby_dep (1.5.0)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.5.2)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -126,7 +135,13 @@ GEM
       hirb
       simplecov
     simplecov-html (0.10.2)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
     stringex (1.5.1)
+    tilt (2.0.8)
     unicode-display_width (1.3.0)
     uuidtools (2.1.5)
     xpath (2.1.0)
@@ -143,8 +158,10 @@ DEPENDENCIES
   rerun
   rspec
   rubocop
+  selenium-webdriver
   simplecov
   simplecov-console
+  sinatra
 
 RUBY VERSION
    ruby 2.4.0p0

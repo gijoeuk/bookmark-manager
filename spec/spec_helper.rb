@@ -3,20 +3,19 @@ ENV['RACK_ENV'] = 'test'
  # require our Sinatra app file
  require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
- require 'capybara'
  require 'capybara/rspec'
- require 'rspec'
+ # require './lib/link'
 
- module RSpecMixin
-  include Rack::Test::Methods
-  def app() Sinatra::Application end
- end
+ # module RSpecMixin
+ #  include Rack::Test::Methods
+ #  def app() Sinatra::Application end
+ # end
 
  Capybara.app = BookmarkManager
-
- RSpec.configure do |config|
-   config.include RSpecMixin
- end
+ # 
+ # RSpec.configure do |config|
+ #   config.include RSpecMixin
+ # end
  # tell Capybara about our app class
 
 
