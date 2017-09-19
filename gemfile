@@ -8,8 +8,10 @@ source 'https://www.rubygems.org'
   gem 'sinatra'
   gem 'selenium-webdriver'
 
+
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'rerun'
   gem 'rspec'
   gem 'rubocop'
