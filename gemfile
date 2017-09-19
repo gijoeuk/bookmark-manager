@@ -2,19 +2,12 @@ source 'https://www.rubygems.org'
 
   ruby '2.4.0'
 
+  gem 'sinatra'
   gem 'data_mapper'
   gem 'dm-postgres-adapter'
-  gem 'dm-migrations'
-  gem 'sinatra'
-  gem 'selenium-webdriver'
-
-
-group :test do
-  gem 'capybara'
   gem 'database_cleaner'
-  gem 'rerun'
-  gem 'rspec'
-  gem 'rubocop'
-  gem 'simplecov', require: false
-  gem 'simplecov-console', require: false
-end
+
+  group :test do
+    gem 'capybara'
+    gem 'rspec'
+  end
