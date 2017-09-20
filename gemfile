@@ -10,6 +10,7 @@ source 'https://www.rubygems.org'
   gem 'pg'
   gem 'rake'
   gem 'shotgun'
+  gem 'bundler'
 
 
 group :test do
