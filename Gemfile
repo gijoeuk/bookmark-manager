@@ -4,6 +4,7 @@ source 'https://www.rubygems.org'
 
   gem 'data_mapper'
   gem 'dm-postgres-adapter'
+  gem 'json'
   gem 'dm-migrations'
   gem 'sinatra'
   gem 'selenium-webdriver'
