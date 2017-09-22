@@ -3,10 +3,11 @@ feature 'submit new link' do
     visit('/links/new')
     fill_in('url', with: 'https://www.reddit.com')
     fill_in('title', with: 'Reddit')
+    fill_in('tags', with: 'General')
     click_button 'Submit'
 
     within 'ul#links' do
-      expect(page).to have_content("https://www.reddit.com")
+      expect(page).to have_content("Reddit")
     end
   end
 end
